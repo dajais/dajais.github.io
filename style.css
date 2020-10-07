@@ -5,14 +5,8 @@
 }
 
 body{
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  height: 70vw;
-}
-
-body h1{
-  margin: auto;
+  height: 60vw;
+  background-image: linear-gradient(grey, black);
 }
 
 .container{
@@ -21,8 +15,10 @@ body h1{
   grid-template-rows: 50px 50px 50px;
   height: 90vh;
   width: 80vw;
-  background-color: black;
-  margin: auto;
+  background-image: url(assets/img/fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 2vw auto 0 auto;
   justify-content: center;
   align-content: center;
   
@@ -101,5 +97,5 @@ body h1{
 }
 
 .isCharacter{
-  background-color: rgb(32, 30, 131);
+  background-image: url(assets/img/tipito.png);
 }
