@@ -50,131 +50,148 @@ tile9.addEventListener("click", function(event){
   moveCharacter(event.target)
 })
 
-
 function moveCharacter(tile){
   switch(tile.classList[0]) {
     case "tile1":
-      tile2.classList.remove("isCharacter")
-      tile3.classList.remove("isCharacter")
-      tile4.classList.remove("isCharacter")
-      tile5.classList.remove("isCharacter")
-      tile6.classList.remove("isCharacter")
-      tile7.classList.remove("isCharacter")
-      tile8.classList.remove("isCharacter")
-      tile9.classList.remove("isCharacter")
-      character.position = 1;
-      tile1.classList.add("isCharacter")
-      console.log(character.position)
+      if(character.position === 2 || character.position === 4){
+        tile2.innerHTML = ""
+        tile4.innerHTML = ""
+
+
+        tile1.classList.add("beenHere")
+        tile1.innerHTML = "<img src='assets/img/tipito.png'>"
+        character.position = 1;
+      
+       console.log(character.position)
+      }
     break;
     case "tile2":
-      tile1.classList.remove("isCharacter")
-      tile3.classList.remove("isCharacter")
-      tile4.classList.remove("isCharacter")
-      tile5.classList.remove("isCharacter")
-      tile6.classList.remove("isCharacter")
-      tile7.classList.remove("isCharacter")
-      tile8.classList.remove("isCharacter")
-      tile9.classList.remove("isCharacter")
-      character.position = 2;
-      tile2.classList.add("isCharacter")
+      if(character.position === 1 || character.position === 3 || character.position === 5){
+          tile1.innerHTML = ""
+          tile3.innerHTML = ""
+          tile5.innerHTML = ""
+
+
+         tile2.classList.add("beenHere")
+         tile2.innerHTML = "<img src='assets/img/tipito.png'>"
+         character.position = 2;
+      
+      
       console.log(character.position)
+      }
       break;
     case "tile3":
-      tile1.classList.remove("isCharacter")
-      tile2.classList.remove("isCharacter")
-      tile4.classList.remove("isCharacter")
-      tile5.classList.remove("isCharacter")
-      tile6.classList.remove("isCharacter")
-      tile7.classList.remove("isCharacter")
-      tile8.classList.remove("isCharacter")
-      tile9.classList.remove("isCharacter")
-      character.position = 3;
-      tile3.classList.add("isCharacter")
+      if(character.position === 2 || character.position === 6){
+        tile2.innerHTML = ""
+        tile6.innerHTML = ""
+         
+
+
+        tile3.classList.add("beenHere")
+        tile3.innerHTML = "<img src='assets/img/tipito.png'>"
+        character.position = 3;
+      
+      
       console.log(character.position)
+      }
     break;
     case "tile4":
-      tile1.classList.remove("isCharacter")
-      tile2.classList.remove("isCharacter")
-      tile3.classList.remove("isCharacter")
-      tile5.classList.remove("isCharacter")
-      tile6.classList.remove("isCharacter")
-      tile7.classList.remove("isCharacter")
-      tile8.classList.remove("isCharacter")
-      tile9.classList.remove("isCharacter")
-      character.position = 4;
-      tile4.classList.add("isCharacter")
+      if(character.position === 1 || character.position === 5 || character.position === 7){
+        tile1.innerHTML = ""
+        tile5.innerHTML = ""
+        tile7.innerHTML = ""
+
+        tile4.classList.add("beenHere")
+        tile4.innerHTML = "<img src='assets/img/tipito.png'>"
+        character.position = 4;
+      
+      
       console.log(character.position)
+      }
     break;
     case "tile5":
-      tile1.classList.remove("isCharacter")
-      tile2.classList.remove("isCharacter")
-      tile3.classList.remove("isCharacter")
-      tile4.classList.remove("isCharacter")
-      tile6.classList.remove("isCharacter")
-      tile7.classList.remove("isCharacter")
-      tile8.classList.remove("isCharacter")
-      tile9.classList.remove("isCharacter")
-      character.position = 5;
-      tile5.classList.add("isCharacter")
+      if(character.position === 2 || character.position === 4 || character.position === 6 || character.position === 8){
+        tile2.innerHTML = ""
+        tile4.innerHTML = ""
+        tile6.innerHTML = ""
+        tile8.innerHTML = ""
+
+        tile5.classList.add("beenHere")
+        tile5.innerHTML = "<img src='assets/img/tipito.png'>"
+        character.position = 5;
+      
+      
       console.log(character.position)
+      }
     break;
     case "tile6":
-      tile1.classList.remove("isCharacter")
-      tile2.classList.remove("isCharacter")
-      tile3.classList.remove("isCharacter")
-      tile4.classList.remove("isCharacter")
-      tile5.classList.remove("isCharacter")
-      tile7.classList.remove("isCharacter")
-      tile8.classList.remove("isCharacter")
-      tile9.classList.remove("isCharacter")
-      character.position = 6;
-      tile6.classList.add("isCharacter")
+      if(character.position === 3 || character.position === 5 || character.position === 9){
+        tile3.innerHTML = ""
+        tile5.innerHTML = ""
+        tile9.innerHTML = ""
+
+        tile6.classList.add("beenHere")
+        tile6.innerHTML = "<img src='assets/img/tipito.png'>"
+        character.position = 6;
+      
+      
       console.log(character.position)
+      }
     break;
     case "tile7":
-      tile1.classList.remove("isCharacter")
-      tile2.classList.remove("isCharacter")
-      tile3.classList.remove("isCharacter")
-      tile4.classList.remove("isCharacter")
-      tile5.classList.remove("isCharacter")
-      tile6.classList.remove("isCharacter")
-      tile8.classList.remove("isCharacter")
-      tile9.classList.remove("isCharacter")
-      character.position = 7;
-      tile7.classList.add("isCharacter")
+      if(character.position === 4 || character.position === 8){
+        tile4.innerHTML = ""
+        tile8.innerHTML = ""
+
+
+        tile7.classList.add("beenHere")
+        tile7.innerHTML = "<img src='assets/img/tipito.png'>"
+        character.position = 7;
+      
+      
       console.log(character.position)
+      }
     break;
     case "tile8":
-      tile1.classList.remove("isCharacter")
-      tile2.classList.remove("isCharacter")
-      tile3.classList.remove("isCharacter")
-      tile4.classList.remove("isCharacter")
-      tile5.classList.remove("isCharacter")
-      tile6.classList.remove("isCharacter")
-      tile7.classList.remove("isCharacter")
-      tile9.classList.remove("isCharacter")
-      character.position = 8;
-      tile8.classList.add("isCharacter")
+      if(character.position === 7 || character.position === 5 || character.position === 9){
+        tile7.innerHTML = ""
+        tile5.innerHTML = ""
+        tile9.innerHTML = ""
+
+        tile8.classList.add("beenHere")
+        tile8.innerHTML = "<img src='assets/img/tipito.png'>"
+        character.position = 8;
+     
+     
       console.log(character.position)
+      }
     break;
     case "tile9":
-      tile1.classList.remove("isCharacter")
-      tile2.classList.remove("isCharacter")
-      tile3.classList.remove("isCharacter")
-      tile4.classList.remove("isCharacter")
-      tile5.classList.remove("isCharacter")
-      tile6.classList.remove("isCharacter")
-      tile7.classList.remove("isCharacter")
-      tile8.classList.remove("isCharacter")
-      character.position = 9;
-      tile9.classList.add("isCharacter")
+      if(character.position === 8 || character.position === 6){
+        tile8.innerHTML = ""
+        tile6.innerHTML = ""
+        
+
+        tile9.classList.add("beenHere")
+        tile9.innerHTML = "<img src='assets/img/tipito.png'>"
+        character.position = 9;
+      
+      
       console.log(character.position)
+      }
     break;
     }
 
-
-
-
-
-
 }
+
+var equip = document.querySelector(".equip")
+  
+var buttonEquip = document.querySelector("#buttonEquip")
+buttonEquip.addEventListener("click", function(){
+  if(equip.classList.length === 1){
+        equip.classList.add("hidden")
+      }else{
+        equip.classList.remove("hidden")
+      }
+
+})

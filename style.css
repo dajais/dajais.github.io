@@ -5,31 +5,34 @@
 }
 
 body{
-  height: 60vw;
-  background-image: linear-gradient(grey, black);
-}
-
-.container{
-  display: grid;
-  grid-template-columns: 50px 50px 50px;
-  grid-template-rows: 50px 50px 50px;
-  height: 90vh;
-  width: 80vw;
+  height: 75.8vw;
   background-image: url(assets/img/fondo.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 2vw auto 0 auto;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-rows:20% 20% 20% 20% 20%;
+}
+
+/* Start of Main: Map */
+.map{
+  grid-column: 1/2;
+  grid-row: 4 / 5;
+  display: grid;
+  grid-template-columns: 50px 50px 50px;
+  grid-template-rows: 50px 50px 50px;
   justify-content: center;
-  align-content: center;
+  align-self: flex-end;
+
   
 }
 
 .tile1{
   grid-column: 1 / 2 ;
   grid-row:  1 / 2;
-  background-color: white;
   height: 50px;
   width: 50px;
+  background-color: white;
 }
 
 .tile2{
@@ -96,6 +99,97 @@ body{
   width: 50px;
 }
 
-.isCharacter{
-  background-image: url(assets/img/tipito.png);
+.beenHere{
+ background-image: url(assets/img/Rock.png); 
+}
+
+/* Inventory */
+
+.equip{
+    grid-column: 2/3;
+    grid-row: 1/3;
+    background-color: white;
+    width: 300px;
+    height: 500px;
+    justify-content: center;
+    margin-top: 100px;
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 30% 40% 30%;
+}
+
+.head{
+  width: 100px;
+  height: 100px;
+   background-image: linear-gradient(grey, black);
+  grid-column: 2/3;
+  grid-row: 1 / 2;
+  margin-top: 10px;
+}
+
+.chest{
+  width: 100px;
+  height: 250px;
+   background-image: linear-gradient(grey, black);
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  align-self: center;
+}
+
+.boots{
+  width: 100px;
+  height: 100px;
+   background-image: linear-gradient(grey, black);
+  align-self: flex-end;
+  margin-bottom: 10px;
+  grid-column: 2/3;
+  grid-row: 3 / 4;
+}
+
+.weapon{
+  width:100px;
+  height: 180px;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  align-self: center;
+  background-image: linear-gradient(grey, black);
+  margin-left: 20px;
+
+}
+
+/* Buttons */
+.buttonEquip{
+  grid-column: 1 / 2;
+  grid-row: 5 / 6;
+  margin: 130px 0 0 50px;
+}
+.buttonEquip button{
+  width: 150px;
+  height: 50px;
+  border-radius: 5px;
+  background-image: linear-gradient(grey, black, grey);
+  color: white;
+  font-size: 30px;
+  border: rgb(99, 17, 17) solid 1px;
+}
+
+.buttonInventory{
+  grid-column: 1 / 2;
+  grid-row: 5 / 6;
+  margin: 130px 0 0 250px;
+}
+
+.buttonInventory button{
+  width: 150px;
+  height: 50px;
+  border-radius: 5px;
+  background-image: linear-gradient(grey, black, grey);
+  color: white;
+  font-size: 30px;
+  border: rgb(99, 17, 17) solid 1px;
+}
+
+.hidden{
+  visibility: hidden;
 }
